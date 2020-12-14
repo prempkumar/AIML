@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="credit_history <= 3.5\ngini = 0.425\nsamples = 300\nvalue = [208, 92]\nclass = N", fillcolor="#f0b991"] ;
+1 [label="checking_balance <= 0.0\ngini = 0.386\nsamples = 272\nvalue = [201, 71]\nclass = N", fillcolor="#eeae7f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 22.5\ngini = 0.224\nsamples = 109\nvalue = [95, 14]\nclass = N", fillcolor="#e99456"] ;
+1 -> 2 ;
+3 [label="gini = 0.49\nsamples = 7\nvalue = [3, 4]\nclass = Y", fillcolor="#cee6f8"] ;
+2 -> 3 ;
+4 [label="gini = 0.177\nsamples = 102\nvalue = [92, 10]\nclass = N", fillcolor="#e88f4f"] ;
+2 -> 4 ;
+5 [label="months_loan_duration <= 22.5\ngini = 0.455\nsamples = 163\nvalue = [106, 57]\nclass = N", fillcolor="#f3c5a3"] ;
+1 -> 5 ;
+6 [label="gini = 0.365\nsamples = 104\nvalue = [79, 25]\nclass = N", fillcolor="#eda978"] ;
+5 -> 6 ;
+7 [label="gini = 0.496\nsamples = 59\nvalue = [27, 32]\nclass = Y", fillcolor="#e0f0fb"] ;
+5 -> 7 ;
+8 [label="other_credit_none <= 0.5\ngini = 0.375\nsamples = 28\nvalue = [7, 21]\nclass = Y", fillcolor="#7bbeee"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="phone <= 0.5\ngini = 0.49\nsamples = 14\nvalue = [6, 8]\nclass = Y", fillcolor="#cee6f8"] ;
+8 -> 9 ;
+10 [label="gini = 0.278\nsamples = 6\nvalue = [1, 5]\nclass = Y", fillcolor="#61b1ea"] ;
+9 -> 10 ;
+11 [label="gini = 0.469\nsamples = 8\nvalue = [5, 3]\nclass = N", fillcolor="#f5cdb0"] ;
+9 -> 11 ;
+12 [label="months_loan_duration <= 46.5\ngini = 0.133\nsamples = 14\nvalue = [1, 13]\nclass = Y", fillcolor="#48a5e7"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 9\nvalue = [0, 9]\nclass = Y", fillcolor="#399de5"] ;
+12 -> 13 ;
+14 [label="gini = 0.32\nsamples = 5\nvalue = [1, 4]\nclass = Y", fillcolor="#6ab6ec"] ;
+12 -> 14 ;
+}
